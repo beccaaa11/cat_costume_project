@@ -27,57 +27,59 @@ h3{
   font-family: 'PT Serif';
   font-size: 1em;
   line-height:2em;
+  color:#323232;
 }
 
 p{
-  font-family: 'PT Serif', serif;
+  font-family: 'PT Serif';
   font-size:.875em;
   line-height: 1.75em;
   color:#323232;
 }
 
-a{
-  font-family: 'PT serif:700', serif;
+.orange{
+  font-family: 'PT Serif';
   font-size: 1em;
   color:#f26522;
   text-decoration:none;
 }
 
 .splash{
-  display:block;
-  width:auto;
+  max-width:100%;
 }
 
-.nav h1{
-  font-size:1.25em;
-  color:#323232;
-
-}
-.nav li{
-  display:inline;
-  font-family:'PT Sans';
-  color:#323232;
-  padding-right:20px;
-
+.nav ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   background-color: #ffffff;
 }
 
-.nav a{
-  color:#323232;
-  font-family:'PT Sans';
-
+.nav h1 {
+ font-size: 1.5em;
+ color: #323232;
+ font-family: PT Sans Narrow;
+ font-weight: bold;
+ padding-left: 30px;
 }
-ul{
-  list-style:none;
-  margin-top:0;
-  text-align:right;
-  font-family:'PT Sans';
-  font-size:.9em;
-  color:#323232;
 
+.nav li a {
+   display: block;
+   float: right;
+   color: #323232;
+   font-size: .9em;
+   text-transform: uppercase;
+   text-align: center;
+   padding: 22px 15px;
+   margin-right: 20px;
+   font-family: PT Sans;
+   text-decoration: none;
 }
 
 .main{
   text-align:center;
+  padding:20px;
 }
 .about{
   background-color:#eee;
@@ -94,34 +96,60 @@ ul{
 .img-circle{
   border-radius:50%;
 }
+
 .images{
   text-align:center;
   padding:80px;
+
 }
+
 .container{
   background-color:#eee;
   text-align:center;
-  padding:80px;
+  padding:45px;
+
 }
+
 .touch{
-  background-color:white;
+  background-color:#fff;
   text-align:left;
-  width:200px;
-  height:150px;
+  width:300px;
+  height:200px;
+  padding:5px 5px 10px 10px;
+  vertical-align:middle;
   display:inline-block;
-  padding:30px;
-  margin-left:60px;
   margin-top:45px;
+  margin-left:60px;
   margin-bottom:80px;
 
 }
+
+.info{
+  background-color:#fff;
+  text-align:left;
+  width:300px;
+  height:200px;
+  padding:5px 5px 10px 10px;
+  margin-top:45px;
+  margin-left:60px;
+  margin-bottom:80px;
+  display:inline-block;
+  vertical-align:middle;
+}
+.tab{
+  text-indent:70px;
+  color:#f26522;
+  line-height:.15em;
+  font-size:1em;
+}
+
 .foot{
   background-color:#00897f;
   color:#eee;
   text-align:center;
-  height:60px;
-  padding:65px;
-  font-family: 'PT Sans Narrow:700';
+  height:40px;
+  padding:30px 15px 25px 15px;
+  font-family: 'PT Sans Narrow';
   font-size:1.25em;
 
 }
