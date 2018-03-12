@@ -2,15 +2,6 @@ body {
   margin: 0;
 }
 
-
-/* On devices wider than 660px */
-@media(min-width: 660px) {
-}
-
-/* On devices wider than 940px */
-@media(min-width: 940px) {
-}
-
 h1{
   font-family: 'PT Sans Narrow', sans-serif;
   font-size: 1.875em
@@ -81,9 +72,10 @@ p{
   text-align:center;
   padding:20px;
 }
+
 .about{
   background-color:#eee;
-  width:240px;
+  width:240;
   height:260px;
   text-align:justify;
   display:inline-block;
@@ -98,9 +90,28 @@ p{
 }
 
 .images{
-  text-align:center;
+display:flex;
+flex-direction:row;
+justify-content:flex-start;
+float:right;
+}
+.image{
+  display:flex;
+  flex-direction:row;
   padding:80px;
 
+}
+.image2{
+  display:flex;
+  flex-direction:row;
+  justify-content:flex-start;
+  padding:80px;
+}
+.image3{
+  display:flex;
+  flex-direction:row;
+  justify-content:flex-start;
+  padding:80px;
 }
 
 .container{
@@ -151,5 +162,63 @@ p{
   padding:30px 15px 25px 15px;
   font-family: 'PT Sans Narrow';
   font-size:1.25em;
+
+}
+
+@media screen and (max-width:400px){
+  body{
+    margin:auto;
+  }
+  .nav li a {
+     display: none;
+  }
+  .nav h1{
+    text-align:center;
+    padding-left:125px;
+    margin:auto;
+  }
+  .main{
+    padding:0;
+  }
+  .about{
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    padding:0;
+    margin:auto;
+    width:100%;
+    text-align: inherit;
+  }
+  .images{
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-end;
+    padding-left:15px;
+  }
+  .container{
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+    width:100%;
+    margin:auto;
+    padding:0;
+  }
+#meh{
+    display:none;
+  }
+  .info{
+    display:flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    background-color:unset;
+    padding:0;
+  }
+  .touch{
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    background-color:unset;
+    padding:0;
+  }
 
 }
