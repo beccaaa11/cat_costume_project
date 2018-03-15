@@ -1,3 +1,8 @@
+/*
+  Overall: Good job following the style guide there are some opportunities to adjust some of the padding, font-size, and line-height for the mobil version.
+  Also, make sure to clear floats!
+*/
+
 body {
   margin: 0;
 }
@@ -35,6 +40,7 @@ p{
   text-decoration:none;
 }
 
+/* Note: There is a different image for mobile */
 .splash{
   max-width:100%;
 }
@@ -89,6 +95,10 @@ p{
   border-radius:50%;
 }
 
+/*
+  consider removing extra properties in 
+  image, .image2, .image 3
+*/
 .images{
 display:flex;
 flex-direction:row;
@@ -99,7 +109,6 @@ float:right;
   display:flex;
   flex-direction:row;
   padding:80px;
-
 }
 .image2{
   display:flex;
@@ -121,6 +130,7 @@ float:right;
 
 }
 
+/* padding looks a bit thin for .touch and .info */
 .touch{
   background-color:#fff;
   text-align:left;
@@ -190,8 +200,8 @@ float:right;
     text-align: inherit;
   }
   .images{
-    display:flex;
-    flex-direction:row;
+    display:flex; /* since this is the same as .images earlier on, you can remove this property! */
+    flex-direction:row; /* you can remove this, too! */
     justify-content:flex-end;
     padding-left:15px;
   }
